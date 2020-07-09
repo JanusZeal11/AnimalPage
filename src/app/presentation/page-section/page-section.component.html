@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-title>
+        <h4>{{title}}</h4>
+    </mat-card-title>
+    <mat-card-content>
+        <div class='flex-container' fxLayout='column'>
+            <div *ngFor="let item of items">
+                <app-page-item
+                    [item]="item"
+                    [data]="animal[item]"
+                ></app-page-item>
+            </div>
+        </div>
+        </mat-card-content>
+</mat-card>

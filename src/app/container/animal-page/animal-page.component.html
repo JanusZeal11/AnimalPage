@@ -1,0 +1,7 @@
+<div *ngFor="let section of sections" style="margin:2em;">
+    <app-page-section
+        [title]="section.label"
+        [items]="section.items"
+        [animal]="animal"
+    ></app-page-section>
+</div>

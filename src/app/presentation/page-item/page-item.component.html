@@ -1,0 +1,5 @@
+<mat-form-field style="cursor: pointer;" [title]="getFromDict(item, 'description')">
+    <mat-label>{{getFromDict(item, 'shortName')}}</mat-label>
+    <input matInput readonly [value]="displayValue | removeComma" />
+</mat-form-field>
+
